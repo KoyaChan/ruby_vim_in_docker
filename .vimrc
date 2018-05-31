@@ -26,6 +26,7 @@ let &t_te.="\e[0 q"
 language ctype ja_JP.UTF-8
 language messages ja_JP.UTF-8
 
+" === dein script ===
 if &compatible
  set nocompatible
 endif
@@ -48,12 +49,18 @@ if dein#load_state('~/.cache/dein')
  call dein#save_state()
 endif
 
+if dein#check_install()
+  call dein#install()
+end
+
 filetype plugin indent on
 syntax enable
+" === dein script end ===
 
-"=== Lucius ==="
+" === Lucius ==="
 colorscheme lucius
 
 set background=dark
 set t_Co=256
+" === Lucius end ===
 
