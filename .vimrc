@@ -42,9 +42,18 @@ if dein#load_state('~/.cache/dein')
    call dein#add('roxma/vim-hug-neovim-rpc')
  endif
 
+ call dein#add('vim-scripts/Lucius')
+
  call dein#end()
  call dein#save_state()
 endif
 
 filetype plugin indent on
 syntax enable
+
+"=== Lucius ==="
+colorscheme lucius
+
+set background=dark
+set t_Co=256
+
