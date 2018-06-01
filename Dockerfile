@@ -4,14 +4,16 @@ WORKDIR $APP_ROOT
 
 COPY Gemfile $APP_ROOT
 
+RUN apt-get update
+
 RUN \
-  apt-get update && \
   apt-get install -y bundler && \
   bundle install
 
+RUN \
+  apt-get install -y git
 
 RUN \
-  apt-get update && \
   apt-get install -y vim && \
   apt upgrade -y vim && \
   apt install -y vim-nox && \
