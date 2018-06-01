@@ -2,6 +2,14 @@ FROM ruby
 ENV APP_ROOT /usr/src/ruby-vim
 WORKDIR $APP_ROOT
 
+COPY Gemfile $APP_ROOT
+
+RUN \
+  apt-get update && \
+  apt-get install -y bundler && \
+  bundle install
+
+
 RUN \
   apt-get update && \
   apt-get install -y vim && \
@@ -12,3 +20,4 @@ RUN \
   sh ./installer.sh ~/.cache/dein
 
 COPY .vimrc /root
+CMD bash
