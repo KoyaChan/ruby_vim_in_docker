@@ -15,9 +15,9 @@ RUN \
 
 RUN \
   apt-get install -y vim && \
-  apt upgrade -y vim && \
-  apt install -y vim-nox && \
-  apt install -y task-japanese locales-all && \
+  apt-get upgrade -y vim && \
+  apt-get install -y vim-nox && \
+  apt-get install -y task-japanese locales-all && \
   curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh && \
   sh ./installer.sh ~/.cache/dein
 
