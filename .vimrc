@@ -44,6 +44,9 @@ if dein#load_state('~/.cache/dein')
  endif
 
  call dein#add('vim-scripts/Lucius')
+ call dein#add('scrooloose/nerdtree')
+ call dein#add('vim-syntastic/syntastic')
+ call dein#add('thinca/vim-quickrun')
 
  call dein#end()
  call dein#save_state()
@@ -64,3 +67,11 @@ set background=dark
 set t_Co=256
 " === Lucius end ===
 
+" === rubocop ===
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['ruby'] }
+let g:syntastic_ruby_checkers = ['rubocop']
+" === rubocop end ===
+
+" === NerdTree ===
+autocmd vimenter * NERDTree
+" === NerdTree end ===
