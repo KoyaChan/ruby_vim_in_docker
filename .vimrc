@@ -47,6 +47,7 @@ if dein#load_state('~/.cache/dein')
  call dein#add('scrooloose/nerdtree')
  call dein#add('vim-syntastic/syntastic')
  call dein#add('thinca/vim-quickrun')
+ call dein#add('simeji/winresizer')
 
  call dein#end()
  call dein#save_state()
