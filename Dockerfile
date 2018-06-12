@@ -1,5 +1,5 @@
 FROM ruby
-ENV APP_ROOT /usr/src/ruby-vim
+ENV APP_ROOT /usr/src/scripts
 WORKDIR $APP_ROOT
 
 COPY Gemfile $APP_ROOT

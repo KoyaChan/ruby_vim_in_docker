@@ -1,0 +1,11 @@
+version: '3'
+services:
+  vim:
+    build: .
+    image: ruby-vim
+    volumes:
+      - e:\work\scripts:/usr/src/scripts
+      - e:\work\ruby-vim:/usr/src/ruby-vim
+    container_name: vim
+
+
