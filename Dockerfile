@@ -22,4 +22,5 @@ RUN \
   sh ./installer.sh ~/.cache/dein
 
 COPY .vimrc /root
+COPY .pryrc /root
 CMD bash

@@ -1,0 +1,8 @@
+def Pry.set_color sym, color
+  CodeRay::Encoders::Terminal::TOKEN_COLORS[sym] = color.to_s
+  { sym => color.to_s }
+end
+
+Pry.set_color :integer, "\e[1;36m"
+
+
