@@ -21,6 +21,16 @@ RUN \
   curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh && \
   sh ./installer.sh ~/.cache/dein
 
+# setup python3
+ENV PYTHON /usr/bin/python3
+RUN \
+  apt-get upgrade -y python3 && \
+  apt-get install -y python3-pip && \
+  apt-get install -y python3-matplotlib && \
+  pip3 install numpy && \
+  pip3 install pandas
+# -----
+
 COPY .vimrc /root
 COPY .pryrc /root
 CMD bash
