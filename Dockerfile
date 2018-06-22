@@ -8,7 +8,9 @@ RUN apt-get update
 
 RUN \
   apt-get install -y bundler && \
-  bundle install
+  bundle install && \
+# setup refe
+  bitclust setup
 
 RUN \
   apt-get install -y git

@@ -48,6 +48,7 @@ if dein#load_state('~/.cache/dein')
  call dein#add('vim-syntastic/syntastic')
  call dein#add('thinca/vim-quickrun')
  call dein#add('simeji/winresizer')
+ call dein#add('thinca/vim-ref')
 
  call dein#end()
  call dein#save_state()
@@ -77,3 +78,7 @@ let g:syntastic_ruby_checkers = ['rubocop']
 " === NerdTree ===
 autocmd vimenter * NERDTree
 " === NerdTree end ===
+
+" === vim-refe ===
+let g:ref_refe_cmd = '/usr/local/bundle/bin/refe'
+" === vim-refe end ===
