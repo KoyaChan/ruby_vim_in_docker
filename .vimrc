@@ -77,8 +77,12 @@ let g:syntastic_ruby_checkers = ['rubocop']
 
 " === NerdTree ===
 autocmd vimenter * NERDTree
+
+"Close NerdTree when closing all other buffers
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " === NerdTree end ===
 
 " === vim-refe ===
 let g:ref_refe_cmd = '/usr/local/bundle/bin/refe'
 " === vim-refe end ===
+
