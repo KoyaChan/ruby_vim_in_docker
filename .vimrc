@@ -1,6 +1,7 @@
 set number
 set noswapfile
 set encoding=utf-8
+set shell=bash
 set fileencodings=utf-8,utf-16le,sjis,iso-2022-jp,euc-jp
 set noundofile
 set nobackup
