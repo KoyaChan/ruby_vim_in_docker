@@ -1,11 +1,11 @@
-version: '3'
+version: '2'
 services:
   vim:
     build: .
-    image: ruby-vim
+    image: koyachan/ruby-vim
     volumes:
-      - e:\work\scripts:/usr/src/scripts
-      - e:\work\ruby-vim:/usr/src/ruby-vim
+      - ~/scripts:/usr/src/scripts
+      - ~/ruby_vim_in_docker:/usr/src/ruby-vim
     container_name: vim
 
 
