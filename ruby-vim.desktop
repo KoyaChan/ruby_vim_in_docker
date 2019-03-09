@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=ruby-vim
+Encoding=UTF-8
+Exec=/home/toshi/ruby_vim_in_docker/ruby-vim.sh
+Icon=/home/toshi/.local/share/icons/hicolor/128x128/apps/Rubyeditor-Circle-256.png
+Terminal=true
+Name[ja]=ruby-vim
